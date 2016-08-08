@@ -1,0 +1,24 @@
+.movies-list {
+  padding: 0 15px 15px 15px;
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $max-width-page;
+
+  @include respond-to(tablets) {
+    padding: 0 0px 15px 0;
+  }
+
+  @include respond-to(wide-handhelds) {
+    padding: 0 25px 15px 25px;
+  }
+
+  @include respond-to(handhelds) {
+    justify-content: center;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    padding: 10px 5px;
+  }
+}

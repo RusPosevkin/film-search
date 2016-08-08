@@ -1,0 +1,15 @@
+:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+.ember-application {
+  padding-top: 12px;
+  color: $font-color;
+}
+
+.wrapper-center {
+  @include flexbox();
+  justify-content: center;
+}

@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('search');
+  this.route('search', { path: '/' });
+  this.route('movie', { path: '/movie/:movie_id' });
+  this.route('page-not-found', { path: '/*wildcard' });
 });
 
 export default Router;

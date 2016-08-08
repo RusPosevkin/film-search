@@ -1,0 +1,15 @@
+.search {
+  @include flexbox();
+  flex-direction: column;
+  align-items: center;
+  min-width: $min-width-page;
+
+  &__title {
+    white-space: nowrap;
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+    }
+  }
+}

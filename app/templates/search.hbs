@@ -1,0 +1,60 @@
+<div class="search">
+  <h1 class="search__title"><a href="/">Find a movie</a></h1>
+  {{search-input class="search-input"}}
+
+  {{#if model.isMultiplePages}}
+  <div class="paginator">
+    <ul>
+      {{#each model.paginator as |elem|}}
+        <li>
+          {{#link-to "search"  (query-params query=query page=elem)}}{{elem}}{{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+
+  <div class="movies-list">
+    {{#if model}}
+      {{#each model.data.results as |item|}}
+        <div class="movies-list__item">
+          <div class="movie-card">
+            <div class="movie-card__poster">
+              {{#if item.poster_path}}
+                <a href="movie/{{item.id}}">
+                  <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{item.poster_path}}" />
+                </a>
+              {{else}}
+                <a href="movie/{{item.id}}">
+                  <img src="https://assets.tmdb.org/assets/7f29bd8b3370c71dd379b0e8b570887c/images/no-poster-w185-v2.png" />
+                </a>
+              {{/if}}
+            </div>
+            <div>
+              <div class="movie-card__title">
+                <a href="movie/{{item.id}}">{{item.title}}</a>
+              </div>
+              {{#if item.year}}
+              <div class="movie-card__year">Release year: <strong>{{item.year}}</strong></div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    {{else}}
+      {{#if isEmptyQuery}}{{else}}<h1>Nothing found</h1>{{/if}}
+    {{/if}}
+  </div>
+
+  {{#if model.isMultiplePages}}
+  <div class="paginator paginator_duplicate">
+    <ul>
+      {{#each model.paginator as |elem|}}
+        <li>
+          {{#link-to "search"  (query-params query=query page=elem)}}{{elem}}{{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+</div>

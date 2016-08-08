@@ -1,0 +1,27 @@
+.search-input {
+  @include flexbox();
+  font-size: 24px;
+
+  &__input {
+    max-width: 300px;
+    display: inline-block;
+    border: 1px solid $base-color;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    
+    @include respond-to(handhelds) {
+      width: 195px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $base-color;
+    padding: 5px;
+    color: $base-contrasting-font-color;
+    border-radius: 0 5px 5px 0;
+    background-color: $base-color;
+  }
+}
