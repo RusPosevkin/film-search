@@ -3,6 +3,12 @@
 
 Responsive SPA powered by Ember.js framework. The movie search engine that using TMDB API to get movie data.
 
+## Demo
+#### Main page
+![Main page](https://raw.githubusercontent.com/RusPosevkin/film-search/master/img/main.png "Main page") 
+#### Concrete movie page
+![Concrete movie page](https://raw.githubusercontent.com/RusPosevkin/film-search/master/img/movie.png "Concrete movie page") 
+
 ## Prerequisites
 
 * [Git](http://git-scm.com/)
