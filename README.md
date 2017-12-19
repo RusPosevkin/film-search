@@ -1,6 +1,4 @@
 # Film-search
-Приложение “Поиск фильма”. Используется API сервиса themoviedb.org в качестве источника базы фильмов.
-
 Responsive SPA powered by Ember.js framework. The movie search engine that using TMDB API to get movie data.
 
 ## Demo
@@ -29,13 +27,13 @@ Responsive SPA powered by Ember.js framework. The movie search engine that using
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Функционал приложения
-* Отображение позиций на странице в плиточном виде (картинка, название и год)
-* Поиск по имени
-* Динамическая подгрузка (пагинация)
-* Выбор фильма и отображение более подробной информации на отдельной странице
-* Страница 404
-* Адаптивная верстка
- * Для удобства пользователя при отображении на устройствах с небольшим разрешением экрана (320 - 479 px) контрол пагинации продублирован также внизу страницы.
-* Сохранение состояний поиска / возможность вернуться на пару шагов назад
-* Обработка ошибок при загрузке данных с TMDB. В случае возникновения ошибки, пользователь автоматически перенаправляется на главную страницу.
+### Features
+* Showing plates with movies that contains image, title and year
+* Search movies by name
+* Pagination
+* Full movie information in separate page
+* 404 Page
+* Adaptive layout
+* Duplicate pagination in the bottom for devices with small screen (320 - 479 px)
+* History API support
+* TMDB data loading error handling. If error occurred user locate to main page.
