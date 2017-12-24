@@ -15,19 +15,27 @@ Responsive SPA powered by Ember.js framework. The movie search engine that using
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Installation
+## How to start
+1. Clone this repository
+  ```bash
+  $> git clone https://github.com/RusPosevkin/film-search.git
+  ```
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+2. Install dependencies
+  ```bash
+  $> cd ./film-search
+  $> npm install
+  $> bower install
+  ```
 
-## Running / Development
+3. Start server
+  ```bash
+  $> ember serve
+  ```
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+4. Open a browser your app at [http://localhost:4200](http://localhost:4200).
 
-### Features
+## Features
 * Showing plates with movies that contains image, title and year
 * Search movies by name
 * Pagination
