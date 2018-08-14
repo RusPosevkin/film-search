@@ -45,3 +45,6 @@ Responsive SPA powered by Ember.js framework. The movie search engine that using
 * Duplicate pagination in the bottom for devices with small screen (320 - 479 px)
 * History API support
 * TMDB data loading error handling. If error occurred user locate to main page.
+
+## License
+[MIT](LICENSE)
